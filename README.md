@@ -15,7 +15,7 @@ tmux, neovim, i3, zsh.
 
 ## Authors
 
-* **Pedro Marçal Lima** - *Initial work* - [Marcal08](https://github.com/Marcal08)
+* **Pedro Marçal Lima** - *Trabalho inicial* - [Marcal08](https://github.com/Marcal08)
 
 ## Reconhecimentos
 
