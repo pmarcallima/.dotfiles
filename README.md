@@ -19,6 +19,6 @@ tmux, neovim, i3, zsh.
 
 ## Reconhecimentos
 
-* ThePrimeagen por me convencer a utilizar esse tipo de setup para programar[ThePrimeagen] (https://github.com/ThePrimeagen).
+* ThePrimeagen por me convencer a utilizar esse tipo de setup para programar - [ThePrimeagen](https://github.com/ThePrimeagen).
 
 
