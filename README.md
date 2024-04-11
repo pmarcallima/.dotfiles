@@ -20,7 +20,7 @@ Possuir o devido aplicativo a ser utilizada a configuração instalado e possuir
 tmux, neovim, i3, zsh.
 ```
 
-## Authors
+## Autor
 
 * **Pedro Marçal Lima** - *Trabalho inicial* - [Marcal08](https://github.com/Marcal08)
 
