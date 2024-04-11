@@ -4,9 +4,13 @@ Esse repositório contém arquivos presentes na ~/.config ou ~/ de configuraçã
 
 ## Como fazer
 
-Clone esse repositório em seu diretório ~/, e em seguida crie SymLinks utilizando ln -s caminho_do_arquivo nome_do_link dentro do diretório ~/.config ou ~/ (de acordo com o aplicativo a ser utilizado).
+Clone esse repositório em seu diretório ~/
 ```
 git clone https://github.com/Marcal08/.dotfiles
+```
+Crie SymLinks utilizando ln -s caminho_do_arquivo nome_do_link dentro do diretório ~/.config ou ~/ (de acordo com o aplicativo a ser utilizado).
+```
+ln -s ~/.dotfiles/tmux/.tmux.conf .tmux.conf
 ```
 
 ### Prerequisitos
