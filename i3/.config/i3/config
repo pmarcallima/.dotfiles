@@ -233,6 +233,3 @@ bindsym $mod+m move workspace to output left
 
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
-
-exec --no-startup-id picom -f
-exec_always --no-startup-id feh --bg-scale /home/pedro/Downloads/pokemon.jpg
