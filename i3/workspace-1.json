@@ -1,0 +1,85 @@
+// vim:ts=4:sw=4:et
+{
+    // floating_con with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 534,
+       "width": 898,
+       "x": 29,
+       "y": 57
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "user_on",
+            "geometry": {
+               "height": 578,
+               "width": 894,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "pedro@pedro-B-ON:~",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^Gnome\\-terminal$",
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "machine": "^pedro\\-B\\-ON$",
+               // "title": "^pedro\\@pedro\\-B\\-ON\\:\\~$",
+               // "window_role": "^gnome\\-terminal\\-window\\-0d75452b\\-23a6\\-4e3f\\-b0cf\\-21204667e60c$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // floating_con with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": null,
+    "rect": {
+       "height": 582,
+       "width": 898,
+       "x": 988,
+       "y": 409
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 2,
+            "floating": "user_on",
+            "geometry": {
+               "height": 578,
+               "width": 894,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "btop",
+            "percent": 1,
+            "swallows": [
+               {
+               // "class": "^Gnome\\-terminal$",
+               // "instance": "^gnome\\-terminal\\-server$",
+               // "machine": "^pedro\\-B\\-ON$",
+               // "title": "^btop$",
+               // "window_role": "^gnome\\-terminal\\-window\\-b2334179\\-8db2\\-43fb\\-8252\\-58287fbaff75$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

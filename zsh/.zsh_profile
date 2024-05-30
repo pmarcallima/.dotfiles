@@ -1,0 +1,8 @@
+export XDG_CONFIG_HOME=$HOME/.config
+VIM="nvim"
+
+export PATH="$HOME/.local/bin/scripts:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# Where should I put you?
+bindkey -s ^f "tmux-sessionizer\n"
