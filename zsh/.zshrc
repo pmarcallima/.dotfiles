@@ -1,3 +1,7 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -7,7 +11,9 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell" # set by `omz`
+ZSH_THEME="robbyrussell"
+# Define colors based on the Kitty color scheme
+
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -64,7 +70,16 @@ plugins=(
   zsh-autosuggestions
 )
 
+
+# Add this to your ~/.zshrc
+export COLUMNS=$(tput cols)
+export LINES=$(tput lines)
 source $ZSH/oh-my-zsh.sh
+
+# Meu teclado nao tem as barras de forma facil
+xmodmap -e "keycode 24 = q Q q Q slash bar"
+
+xmodmap -e "keycode 25 = w W w W question backslash question question"
 
 source ~/.zsh_profile
 # User configuration
@@ -92,9 +107,16 @@ source ~/.zsh_profile
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 bindkey -s ^f "tmux-sessionizer\n"
+
+alias vi='/usr/bin/vi'
+export ANDROID_HOME="$HOME/Android/Sdk"
+export ANDROID_SDK_HOME="$HOME/.config/.android"
+export PATH=$ANDROID_HOME/emulator/:$PATH
+export PATH=$ANDROID_HOME/platform-tools/:$PATH
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin/:$PATH
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

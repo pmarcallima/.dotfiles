@@ -48,7 +48,7 @@ gaps outer 1
 # gaps outer all plus 5
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-#smart_gaps on
+smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace) 
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
@@ -101,11 +101,10 @@ mode "$mode_gaps_outer" {
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec i3-sensible-terminal
+  bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec ~/.launch_alacritty.sh 
 
 # kill focused window
-# bindsym $mod+space exec "/home/theprimeagen/dotfiles/awesome-streamerrc/ThePrimeagen/tmux2"
 
 bindsym $mod+Shift+q kill
 
@@ -282,13 +281,17 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
          bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -c backlight set 3%-
  bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -c backlight set 3%+
 # Alsa audio controls.
-bindsym $mod+Shift+comma exec ~/.config/i3/scripts/alsa restore
-bindsym $mod+semicolon exec ~/.config/i3/scripts/alsa down Headphone
-bindsym $mod+comma exec ~/.config/i3/scripts/alsa up Headphone
 bindsym $mod+m move workspace to output left
 
 # Suspend
 bindsym $mod+Shift+period exec systemctl suspend
+bindsym $mod+Shift+comma exec i3lock 
+#interactive screenshot by pressing printscreen
+bindsym Print exec gnome-screenshot -i 
+#crop-area screenshot by pressing Mod + printscreen
+bindsym $mod+Print exec gnome-screenshot -a
+
+
 
 exec_always --no-startup-id picom -f
 exec_always --no-startup-id feh --randomize --bg-fill /home/pedro/wallpapers/
